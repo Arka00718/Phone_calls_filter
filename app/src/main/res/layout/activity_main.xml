@@ -56,7 +56,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@+id/switch_pos1"
-        android:text="включить/выключить блокировку по времени"/>
+        android:text="включить/выключить блокировку  по времени"/>
 
     <Switch
         android:id="@+id/switch_work"

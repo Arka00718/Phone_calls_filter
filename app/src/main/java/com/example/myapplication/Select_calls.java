@@ -24,7 +24,7 @@ public class Select_calls extends AppCompatActivity {
     private LinearLayout contactsContainer;
     private Button btnSelect;
     private ArrayList<String> contactsList = new ArrayList<>();
-    private Set<String> selectedContacts = new HashSet<>();
+    public ArrayList<String> selectedContacts = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

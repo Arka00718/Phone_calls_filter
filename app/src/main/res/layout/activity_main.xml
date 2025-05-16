@@ -34,12 +34,20 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         app:layout_constraintGuide_percent="0.3" />
+
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/time_pos"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.9" />
+        app:layout_constraintGuide_percent="0.65" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/time_pos1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.45" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -75,14 +83,31 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@+id/pep_pos"
         android:text="Управлять контактами"/>
+
     <Button
-        android:id="@+id/button_select_time"
-        android:layout_width="0dp"
+        android:id="@+id/bt_select_time"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/time_pos1"
+        android:text="Выбрать время начала работы"
+        android:textSize="24dp"/>
+
+    <Button
+        android:id="@+id/second_bt_select_time"
+        android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="16dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@+id/time_pos"
-        android:text="Выбрать время"/>
+        android:text="Выбрать время конца работы"
+        android:textSize="24dp"/>
+
+
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
